@@ -16,8 +16,11 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls import url, patterns, include
 from django.contrib import admin
+
 from rest_framework import routers
+
 from app_name import views
+from app_name.views import IndexView
 
 router = routers.DefaultRouter()
 router.register(r'mymodels', views.MyModelViewSet)
@@ -25,6 +28,7 @@ router.register(r'mymodels', views.MyModelViewSet)
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
+    url(r'^', IndexView.as_view(), name='index'),
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
