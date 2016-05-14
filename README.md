@@ -28,7 +28,7 @@ Because you don't want to waste time and setup the following things yourself:
 
 ## Getting it done
 
-So let us get started. Here we are going to assume python 3.x and npm are installed.  If not, please get those up and running. 
+So let us get started. Here we are going to assume python 3.x, npm, and bower are installed.  If not, please get those up and running. 
 
 First we need to make a working directory. For our examples we'll use `coffee_break`
 
@@ -43,7 +43,6 @@ From there, we make our virtual environment `env` and activate it.
 Now let us install Django and bower for our JavaScript
 
     pip install Django
-    npm install bower
 
 ... and now for the good stuff.  We create a new project using our project template, saving us an hour of setup.
 
