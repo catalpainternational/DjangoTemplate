@@ -48,7 +48,7 @@ Now let us install Django for our JavaScript
 
 ... and now for the good stuff.  We create a new project using our project template, saving us an hour of setup.
 
-    django-admin startproject coffee_break --template=https://github.com/catalpainternational/DjangoTemplate/zipball/master
+    django-admin startproject coffee_break --template=https://github.com/catalpainternational/DjangoTemplate/zipball/master -n=README.md
 
 We're almost done, we just need to install our requirements and setup our database
 
@@ -64,11 +64,11 @@ Finally, lets run our server!
 
 {% endif %}
 
-
 # The {{ project_name|title }} Project
-## About
 
-## Describe your project here.
+## About {{ project_name|title }}
+
+## Describe {{ project_name|title }} here.
 
 ## Prerequisites
 
@@ -83,5 +83,5 @@ Finally, lets run our server!
     python manage.py migrate
     python createsuperuser
 
-## Fill out with installation instructions for your project.
+## Fill out with installation instructions for {{ project_name|title }}.
 
