@@ -58,8 +58,12 @@ docs/_build/
 # PyBuilder
 target/
 
-#Ipython Notebook
+# Ipython Notebook
 .ipynb_checkpoints
 
-#exclude db.sqlite3 file
-db.sqlite3
+# Exclude sqlite3 files
+*.sqlite3
+*.db
+
+# Exclude Django's local_settings.py
+local_settings.py
