@@ -26,7 +26,6 @@ SECRET_KEY = 'z4bo!i0bmjtamh!myg=-7rp8%5@!xco_9ss=-xq@3zcif__ng8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['127.0.0.1', ]
 
 
@@ -138,6 +137,7 @@ LANGUAGES = [
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'bower_components'),
 )
