@@ -40,7 +40,7 @@ From there, we make our virtual environment `env` and activate it.
     python3 -m venv env
     source env/bin/activate
 
-Now let us install Django and bower for our JavaScript
+Now let us install Django for our JavaScript
 
     pip install Django
 
