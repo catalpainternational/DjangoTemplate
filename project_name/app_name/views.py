@@ -1,7 +1,18 @@
-from django.shortcuts import render
 from django.views.generic.base import TemplateView
-# Create your views here.
+
+from rest_framework import viewsets
+
+from .serializers import MyModelSerializer
+from .models import MyModel
 
 
-class AppNameView(TemplateView):
+class IndexView(TemplateView):
     template_name = 'index.html'
+
+
+class MyModelViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+    queryset = MyModel.objects.all()
+    serializer_class = MyModelSerializer
