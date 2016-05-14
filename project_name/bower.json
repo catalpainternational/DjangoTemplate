@@ -1,6 +1,6 @@
 {
   "name": "{{ project_name }}",
-  "homepage": "https://github.com/catalpainternational/{{ prject_name }}",
+  "homepage": "https://github.com/catalpainternational/{{ project_name }}",
   "authors": [
     "Catalpa International <info@catalpa.io>"
   ],
