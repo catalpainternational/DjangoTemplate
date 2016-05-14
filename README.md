@@ -1,2 +1,2 @@
 # DjangoTemplate
-Catalpa International's public facing marketing and information site
+Catalpa International's template for Django projects
