@@ -1,3 +1,5 @@
+{% if False %}
+
 # DjangoTemplate
 
 Catalpa International's template for Django projects
@@ -59,4 +61,27 @@ We're almost done, we just need to install our requirements and setup our databa
 Finally, lets run our server!
 
     python manage.py runserver
+
+{% endif %}
+
+
+# The {{ project_name|title }} Project
+## About
+
+## Describe your project here.
+
+## Prerequisites
+
+    Python 3.5 recommended
+    pip
+    virtualenv (virtualenvwrapper is recommended for use during development)
+
+## Installation
+
+    bower install
+    pip install -r requirements.txt
+    python manage.py migrate
+    python createsuperuser
+
+## Fill out with installation instructions for your project.
 
