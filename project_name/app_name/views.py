@@ -11,4 +11,4 @@ class AppViewSet(viewsets.ModelViewSet):
     API endpoint that allows users to be viewed or edited.
     """
     queryset = Appname.objects.all()
-    serializer_class = ApprSerializer
+    serializer_class = AppSerializer
