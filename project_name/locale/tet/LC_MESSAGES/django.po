@@ -17,10 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: project_name/settings.py:125
+#: {{ project_name }}/settings.py:125
 msgid "Tetum"
 msgstr ""
 
-#: project_name/settings.py:126
+#: {{ project_name }}/settings.py:126
 msgid "English"
 msgstr ""

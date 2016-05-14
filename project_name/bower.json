@@ -1,8 +1,8 @@
 {
-  "name": "project_name",
-  "homepage": "https://github.com/catalpainternational/DjangoTemplate",
+  "name": "{{ project_name }}",
+  "homepage": "https://github.com/catalpainternational/{{ prject_name }}",
   "authors": [
-    "Joanico <joanicobarros@gmail.com>"
+    "Catalpa International <info@catalpa.io>"
   ],
   "description": "",
   "main": "",
