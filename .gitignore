@@ -67,3 +67,7 @@ target/
 
 # Exclude Django's local_settings.py
 local_settings.py
+
+# Excluding bower files
+bower_components
+
