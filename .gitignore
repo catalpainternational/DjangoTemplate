@@ -60,3 +60,6 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+#exclude db.sqlite3 file
+db.sqlite3
