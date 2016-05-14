@@ -1,14 +1,11 @@
-from django.shortcuts import render
-
-# Create your views here.
-from .models import *
+from .models import MyModel
 from rest_framework import viewsets
-from .serializers import *
+from .serializers import MyModelSerializer
 
 
-class AppViewSet(viewsets.ModelViewSet):
+class MyModelViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
     """
-    queryset = Appname.objects.all()
-    serializer_class = AppSerializer
+    queryset = MyModel.objects.all()
+    serializer_class = MyModelSerializer

@@ -1,8 +1,8 @@
-from .models import *
+from .models import MyModel
 from rest_framework import serializers
 
 
-class AppSerializer(serializers.HyperlinkedModelSerializer):
+class MyModelSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-            model = Appname
+            model = MyModel
             fields = ('url', 'text')
