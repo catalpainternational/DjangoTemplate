@@ -30,6 +30,7 @@ router.register(r'mymodels', views.MyModelViewSet)
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     url(r'^$', login_required(IndexView.as_view()), name='index'),
+    url(r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
