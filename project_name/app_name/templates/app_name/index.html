@@ -1,0 +1,13 @@
+{% extends 'app_name/base.html' %}
+{% load static %}
+
+{% block content %}
+    <app_name></app_name>
+    <script src="{% static 'app_name.tag' %}" type="riot/tag"></script>
+    <script src="{% static 'riot/riot+compiler.min.js' %}"></script>
+    <script src="{% static 'jquery/dist/jquery.min.js' %}"></script>
+
+    <script>
+        riot.mount('app_name')
+    </script>
+{% endblock %}

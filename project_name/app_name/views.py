@@ -7,7 +7,7 @@ from .models import MyModel
 
 
 class IndexView(TemplateView):
-    template_name = 'index.html'
+    template_name = 'app_name/index.html'
 
 
 class MyModelViewSet(viewsets.ModelViewSet):

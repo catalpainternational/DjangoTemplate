@@ -142,6 +142,8 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'bower_components'),
 )
 
+LOGIN_REDIRECT_URL = '/'
+
 ##################
 # LOCAL SETTINGS #
 ##################
