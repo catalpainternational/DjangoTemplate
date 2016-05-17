@@ -14,27 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf import settings
-from django.conf.urls import url, patterns, include
+from django.conf.urls import url, include
 from django.contrib import admin
-
-from rest_framework import routers
-
-from app_name import views
-from app_name.views import IndexView
-
-router = routers.DefaultRouter()
-router.register(r'mymodels', views.MyModelViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
-    url(r'^$', IndexView.as_view(), name='index'),
+    url(r'^', include('example_app.urls')),
+    url(r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^api/', include(router.urls)),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
 
 if 'rosetta' in settings.INSTALLED_APPS:
-    urlpatterns += patterns('',
-                            url(r'^rosetta/', include('rosetta.urls')),
-                            )
+    urlpatterns += [url(r'^rosetta/', include('rosetta.urls'))]
