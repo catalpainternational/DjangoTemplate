@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'^', include('example_app.urls')),
     url(r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^i18n/', include('django.conf.urls.i18n')),
 ]
 
 if 'rosetta' in settings.INSTALLED_APPS:
