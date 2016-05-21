@@ -1,1 +1,12 @@
 DEBUG = False
+
+'''# To run debug=False uncomment this section
+# run collectstatic
+# install nodejs http-server with `npm install -g http-server`
+# cd to static files directory and run `http-server -p 8001 --cors`
+ALLOWED_HOSTS = ['127.0.0.1']
+STATIC_URL = 'http://127.0.0.1:8001/'
+'''
+
+// the lowest level of logs that the project logger should deal with
+PROJECT_LOG_LEVEL = 'DEBUG'
