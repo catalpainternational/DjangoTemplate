@@ -167,6 +167,7 @@ LOGIN_REDIRECT_URL = '/'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # the lowest level of logs that the project logger should deal with
+# 'DEBUG' / 'INFO' / 'WARNING' / 'ERROR' / 'CRIRICAL'
 PROJECT_LOG_LEVEL = 'INFO'
 
 LOGGING = {

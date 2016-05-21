@@ -8,5 +8,7 @@ ALLOWED_HOSTS = ['127.0.0.1']
 STATIC_URL = 'http://127.0.0.1:8001/'
 '''
 
-// the lowest level of logs that the project logger should deal with
+# the lowest level of logs that the project logger should deal with
+# 'DEBUG' / 'INFO' / 'WARNING' / 'ERROR' / 'CRIRICAL'
 PROJECT_LOG_LEVEL = 'DEBUG'
+LOGGING['loggers']['{{ project_name}}']['level'] = PROJECT_LOG_LEVEL
