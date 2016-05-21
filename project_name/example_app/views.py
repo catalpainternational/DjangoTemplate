@@ -6,7 +6,7 @@ from rest_framework import viewsets
 from .serializers import ExampleModelSerializer
 from .models import ExampleModel
 
-logger = logging.getLogger({{ project_name }})
+logger = logging.getLogger('{{ project_name }}')
 
 
 class IndexView(TemplateView):
