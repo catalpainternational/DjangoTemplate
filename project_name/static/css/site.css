@@ -1,3 +1,7 @@
 .navbar-brand img {
     height: 100%;
 }
+
+.navbar-fixed-bottom {
+    font-size: smaller;
+}
