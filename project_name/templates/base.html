@@ -14,19 +14,24 @@
 
     <body>
 
-        {% block header %}
-        {% endblock %}
+        <div class="container-fluid">
+            {% block header %}
+            {% endblock %}
+        </div>
 
-        {% block content %}
-        {% endblock %}
+        <div class="container-fluid">
+            {% block content %}
+            {% endblock %}
+        </div>
 
         {% block footer %}
             <nav class="navbar navbar-default navbar-fixed-bottom">
-            <div class="container">
-                <p align="center">Catalpa International</p>
-            </div>
-        </nav> 
+                <div class="container">
+                    <p align="center">Copyright <a href="http://catalpa.io">Catalpa International</a> 2016</p>
+                </div>
+            </nav> 
         {% endblock %}
+
 
     </body>
 </html>
