@@ -56,7 +56,7 @@ We're almost done, we just need to install our requirements and setup our databa
     bower install
     pip install -r requirements.txt
     python manage.py migrate
-    python createsuperuser
+    python manage.py createsuperuser
 
 Finally, lets run our server!
 
@@ -81,7 +81,7 @@ Finally, lets run our server!
     bower install
     pip install -r requirements.txt
     python manage.py migrate
-    python createsuperuser
+    python manage.py createsuperuser
 
 ## Fill out with installation instructions for {{ project_name|title }}.
 
