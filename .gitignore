@@ -1,3 +1,5 @@
+# From https://github.com/github/gitignore/blob/master/Python.gitignore
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -46,10 +48,19 @@ coverage.xml
 .hypothesis/
 
 # Translations
+*.mo
 *.pot
 
 # Django stuff:
 *.log
+local_settings.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
 
 # Sphinx documentation
 docs/_build/
@@ -57,16 +68,37 @@ docs/_build/
 # PyBuilder
 target/
 
-# Ipython Notebook
+# IPython Notebook
 .ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# dotenv
+.env
+
+# virtualenv
+venv/
+ENV/
+
+# Spyder project settings
+.spyderproject
+
+# Rope project settings
+.ropeproject
+
+# Catalpa's own specifications
 
 # Exclude sqlite3 files
 *.sqlite3
 *.db
 
-# Exclude Django's local_settings.py
-local_settings.py
-
-# Excluding bower files
+# Exclude bower files
 bower_components
+
+# Exclude node files
+node_modules
 
